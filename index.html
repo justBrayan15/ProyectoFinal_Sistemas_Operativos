@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto Final - Sistemas Operativos</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+    h1, h2 { color: #333; }
+    section { margin-bottom: 40px; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+    pre { background: #eee; padding: 10px; overflow-x: auto; }
+    img { max-width: 100%; height: auto; margin: 10px 0; }
+    a { color: blue; }
+  </style>
+</head>
+<body>
+
+  <h1>Proyecto Final - Sistemas Operativos</h1>
+  <p><strong>Nombre del estudiante:</strong> [Tu nombre aquí]<br>
+     <strong>Grupo:</strong> 6</p>
+
+  <section>
+    <h2>1. Portada</h2>
+    <p>Este proyecto busca aplicar conceptos fundamentales de sistemas operativos mediante la instalación de distribuciones Linux, desarrollo de scripts Bash, uso de Docker y Kubernetes, todo documentado y presentado en esta página.</p>
+  </section>
+
+  <section>
+    <h2>2. Actividades realizadas</h2>
+
+    <h3>2.1 Instalación de OpenSUSE (Gráfico)</h3>
+    <p>Capturas:</p>
+    <img src="img/opensuse_instalacion.png" alt="OpenSUSE">
+    <p>Descripción: Se instaló OpenSUSE Tumbleweed en VirtualBox con entorno gráfico KDE, incluyendo navegadores y editores de texto.</p>
+
+    <h3>2.2 Instalación de Ubuntu Server (Consola)</h3>
+    <p>Capturas:</p>
+    <img src="img/ubuntu_server.png" alt="Ubuntu Server">
+    <p>Descripción: Instalación en modo consola, configuración de red, usuario y herramientas básicas.</p>
+
+    <h3>2.3 Instalación de editores</h3>
+    <ul>
+      <li>Nano</li>
+      <li>Vim</li>
+    </ul>
+
+  </section>
+
+  <section>
+    <h2>3. Scripts de automatización</h2>
+
+    <h3>3.1 Script en entorno gráfico</h3>
+    <pre>
+#!/bin/bash
+echo "Limpiando archivos temporales..."
+rm -rf /tmp/*
+rm -rf ~/.cache/*
+echo "¡Limpieza completada!"
+    </pre>
+
+    <h3>3.2 Script en consola</h3>
+    <pre>
+#!/bin/bash
+echo "Actualizando sistema..."
+sudo apt update && sudo apt upgrade -y
+echo "Actualización completada."
+    </pre>
+
+  </section>
+
+  <section>
+    <h2>4. Docker y Kubernetes</h2>
+
+    <h3>4.1 Dockerfile</h3>
+    <pre>
+FROM ubuntu:latest
+RUN apt update && apt install -y vim nano curl git
+CMD ["bash"]
+    </pre>
+
+    <h3>4.2 Captura de ejecución</h3>
+    <img src="img/docker_ejecucion.png" alt="Docker ejecución">
+
+    <h3>4.3 Kubernetes</h3>
+    <p>Captura del pod ejecutando la imagen:</p>
+    <img src="img/kubernetes_pod.png" alt="Pod en ejecución">
+
+  </section>
+
+  <section>
+    <h2>5. Video de presentación</h2>
+    <p><a href="https://drive.google.com/tu-enlace" target="_blank">Ver presentación en Google Drive</a></p>
+  </section>
+
+</body>
+</html>
